@@ -26,7 +26,8 @@ import android.view.SurfaceView;
 
 
 public class FacePreview extends SurfaceView implements SurfaceHolder.Callback, Camera.PreviewCallback {
-	private SurfaceHolder mHolder;
+    private final Bitmap ball;
+    private SurfaceHolder mHolder;
     private Camera mCamera;
     private Bitmap mWorkBitmap;
     
@@ -48,6 +49,7 @@ public class FacePreview extends SurfaceView implements SurfaceHolder.Callback, 
     
     public FacePreview(Context context) {
         super(context);
+        ball = BitmapFactory.decodeResource(getResources(), R.drawable.globe);
         // Install a SurfaceHolder.Callback so we get notified when the
         // underlying surface is created and destroyed.
         mHolder = getHolder();
@@ -198,6 +200,7 @@ public class FacePreview extends SurfaceView implements SurfaceHolder.Callback, 
         // face detection: first convert the image from NV21 to RGB_565
         YuvImage yuv = new YuvImage(data, ImageFormat.NV21,
                 mWorkBitmap.getWidth(), mWorkBitmap.getHeight(), null);
+
         // TODO: make rect a member and use it for width and height values above
         Rect rect = new Rect(0, 0, mWorkBitmap.getWidth(), mWorkBitmap.getHeight()); 
         
@@ -251,7 +254,7 @@ public class FacePreview extends SurfaceView implements SurfaceHolder.Callback, 
     {
         Log.d(TAG,"onDraw");
         super.onDraw(canvas);
-        
+
         if(mWorkBitmap != null){
         	xRatio = getWidth() * 1.0f / mWorkBitmap.getWidth();
 		    yRatio = getHeight() * 1.0f / mWorkBitmap.getHeight();
@@ -267,6 +270,8 @@ public class FacePreview extends SurfaceView implements SurfaceHolder.Callback, 
                             		(eyesMidPts[i].y + picHeight * ratio / 2.0f) * yRatio, tmpPaint);
 		        }
 		    }
+
+            canvas.drawBitmap(ball, 0, 0, null);
         }
     }
    	
