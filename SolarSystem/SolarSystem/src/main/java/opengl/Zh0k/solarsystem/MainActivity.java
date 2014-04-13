@@ -64,17 +64,15 @@ public class MainActivity extends Activity {
 
         mPreview = new CamLayer(this, glView);
 
-        setContentView(glView);
-        addContentView(mPreview, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
+        setContentView(mPreview);
+        addContentView(glView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
 
     }
 
     protected void onPause() {
         super.onPause();
         sManager.unregisterListener(glView);
-        if (counter>=2) {
-            System.exit(0);
-        }
+
     }
 
 

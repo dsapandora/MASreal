@@ -30,7 +30,7 @@
             android:layout_gravity="center" />
 
         <Button
-            android:layout_width="518dp"
+            android:layout_width="172dp"
             android:layout_height="wrap_content"
             android:text="START"
             android:id="@+id/button"
@@ -43,6 +43,14 @@
             android:text="+Real V.0.01"
             android:id="@+id/textView2"
             android:layout_gravity="left|center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mini Game"
+            android:id="@+id/button2"
+            android:layout_gravity="right|bottom"
+            android:onClick="clicker" />
 
     </FrameLayout>
 </RelativeLayout>

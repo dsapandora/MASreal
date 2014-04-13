@@ -10,7 +10,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.graphics.PixelFormat;
+import android.graphics.drawable.Drawable;
 import android.hardware.Camera;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -35,6 +38,7 @@ import java.nio.FloatBuffer;
 public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.Renderer, Camera.PreviewCallback,SurfaceHolder.Callback, SensorEventListener {
 
     private SensorManager sManager = null;
+
     public float frametime = 0.06f;
     public float xPosicion, xAcceleracion,xVelocity = 0.0f;
     public float yPosicion, yAcceleration,yVelocity = 0.0f;
@@ -141,7 +145,7 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         bindCameraTexture(gl);
         gl.glLoadIdentity();
 
-        gl.glRotatef((float)Math.sin(onDrawFrameCounter/50f)*2f,0,-1,0);
+        gl.glRotatef((float) Math.sin(onDrawFrameCounter / 50f) * 2f, 0, -1, 0);
 
         GLU.gluLookAt(gl, 0, 0, 0.42f, 0, 0, 0, 0, 1, 0);
 
@@ -152,11 +156,11 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         gl.glTranslatef(0, 0, -zPosicion);
 
 // rotate
-        gl.glRotatef((float) Math.sin(yPosicion), 0, 1, 0);
-        gl.glRotatef((float) Math.cos(xPosicion), 1, 0, 0);
+        gl.glRotatef((float) Math.cos(yPosicion), 0, 1, 0);
+        gl.glRotatef((float) Math.sin(xPosicion), 1, 0, 0);
 
 // move to center of circle
-        gl.glTranslatef(0.0f, 0.0f, zPosicion);
+        //gl.glTranslatef(0.0f, 0.0f, zPosicion);
         //FIN CAMARA
 
 
@@ -173,31 +177,31 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_SPECULAR, makeFloatBuffer(white));
         gl.glPushMatrix();   //7
         angle+=orbitalIncrement;   //8
-        gl.glRotatef(angle + 4f, 0.0f, 1.0f, 0.0f);   //10.5
+        gl.glRotatef(angle - 4f, 0.0f, 1.0f, 0.0f);   //10.5
         executePlanet(m_Mercury, gl);
 
-        gl.glRotatef(angle +3f, 0.0f, 1.0f, 0.0f);   //9
+        gl.glRotatef(angle - 3f, 0.0f, 1.0f, 0.0f);   //9
         executePlanet(m_Venus, gl);
 
-        gl.glRotatef(angle+2.5f, 0.0f, 1.0f, 0.0f);   //9
+        gl.glRotatef(angle - 2.5f, 0.0f, 1.0f, 0.0f);   //9
         executePlanet(m_Earth, gl);
 
-        gl.glRotatef(angle+2f, 0.0f, 1.0f, 0.0f);   //9
+        gl.glRotatef(angle - 2f, 0.0f, 1.0f, 0.0f);   //9
         executePlanet(m_Mars, gl);   //10
 
-        gl.glRotatef(angle+1.5f, 0.0f, 1.0f, 0.0f);   //9
+        gl.glRotatef(angle - 1.5f, 0.0f, 1.0f, 0.0f);   //9
         executePlanet(m_Jupiter, gl);   //10
 
-        gl.glRotatef(angle+1f, 0.0f, 1.0f, 0.0f);   //9
+        gl.glRotatef(angle - 1f, 0.0f, 1.0f, 0.0f);   //9
         executePlanet(m_Saturn, gl);   //10
 
         gl.glRotatef(angle, 0.0f, 1.0f, 0.0f);   //9
         executePlanet(m_Saturn, gl);   //10
 
-        gl.glRotatef(angle-1, 0.0f, 1.0f, 0.0f);   //9
+        gl.glRotatef(angle + 1, 0.0f, 1.0f, 0.0f);   //9
         executePlanet(m_Urano, gl);   //10
 
-        gl.glRotatef(angle-2, 0.0f, 1.0f, 0.0f);   //9
+        gl.glRotatef(angle+2, 0.0f, 1.0f, 0.0f);   //9
         executePlanet(m_Netptune, gl);   //10
 
         gl.glPopMatrix();   //11
@@ -207,6 +211,49 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         executePlanet(m_Sun, gl); //14
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_EMISSION, makeFloatBuffer(black)); //15
         gl.glPopMatrix();
+
+        DrawText(gl,"SISTEMA +REAL");
+    }
+
+    private void DrawText(GL10 gl, String s) {
+        // Create an empty, mutable bitmap
+        Bitmap bitmap = Bitmap.createBitmap(256, 256, Bitmap.Config.ARGB_4444);
+// get a canvas to paint over the bitmap
+        Canvas canvas = new Canvas(bitmap);
+        bitmap.eraseColor(0);
+
+// get a background image from resources
+// note the image format must match the bitmap format
+        Drawable background = ac.getResources().getDrawable(R.drawable.sun);
+        background.setBounds(0, 0, 256, 256);
+        background.draw(canvas); // draw the background to our bitmap
+
+// Draw the text
+        Paint textPaint = new Paint();
+        textPaint.setTextSize(32);
+        textPaint.setAntiAlias(true);
+        textPaint.setARGB(0xff, 0xff, 0xff, 0xff);
+// draw the text centered
+        canvas.drawText("hello world", 0,0, textPaint);
+
+//Generate one texture pointer...
+        gl.glGenTextures(1, textures, 0);
+//...and bind it to our array
+        gl.glBindTexture(GL10.GL_TEXTURE_2D, textures[0]);
+
+//Create Nearest Filtered Texture
+        gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MIN_FILTER, GL10.GL_NEAREST);
+        gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MAG_FILTER, GL10.GL_LINEAR);
+
+//Different possible texture parameters, e.g. GL10.GL_CLAMP_TO_EDGE
+        gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_S, GL10.GL_REPEAT);
+        gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_REPEAT);
+
+//Use the Android GLUtils to specify a two-dimensional texture image from our bitmap
+        GLUtils.texImage2D(GL10.GL_TEXTURE_2D, 0, bitmap, 0);
+
+//Clean up
+        bitmap.recycle();
     }
 
     private void executePlanet(Planet m_Planet, GL10 gl)

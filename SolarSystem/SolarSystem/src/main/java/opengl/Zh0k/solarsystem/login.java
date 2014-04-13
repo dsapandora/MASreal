@@ -51,4 +51,9 @@ public class login extends Activity implements View.OnClickListener {
         Intent openStartingPoint = new Intent(this, MainActivity.class);
         startActivity(openStartingPoint);
     }
+
+    public void clicker(View v){
+        Intent openStartingPoint = new Intent(this, MarsLander.class);
+        startActivity(openStartingPoint);
+    }
 }
