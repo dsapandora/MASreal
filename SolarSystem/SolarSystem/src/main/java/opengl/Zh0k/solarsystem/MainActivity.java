@@ -1,6 +1,8 @@
 package opengl.Zh0k.solarsystem;
 
 import android.content.pm.ActivityInfo;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
@@ -14,6 +16,8 @@ public class MainActivity extends Activity {
 
     private CamLayer mPreview;
     static int counter=0;
+    private SensorManager sManager;
+
     private SolarSystemRenderer glView;
 
     @Override
@@ -39,6 +43,7 @@ public class MainActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
+        sManager =(SensorManager)getSystemService(SENSOR_SERVICE);
 
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
@@ -49,6 +54,8 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         glView=new  SolarSystemRenderer(this,true);
+        sManager.registerListener(glView,sManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),SensorManager.SENSOR_DELAY_NORMAL);
+
 
         mPreview = new CamLayer(this, glView);
 
@@ -57,6 +64,7 @@ public class MainActivity extends Activity {
     }
     protected void onPause() {
         super.onPause();
+        sManager.unregisterListener(glView);
         if (counter>=2) {
             System.exit(0);
         }

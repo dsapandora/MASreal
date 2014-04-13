@@ -39,7 +39,7 @@ public class CamLayer extends SurfaceView implements SurfaceHolder.Callback, Pre
 	        mCamera = Camera.open();
 	
 	    	Camera.Parameters p = mCamera.getParameters();
-	    	p.setPreviewSize(240, 160);
+	    	//p.setPreviewSize(240, 160);
 	    	mCamera.setParameters(p);
 	    	
 	    	try {
