@@ -1,10 +1,14 @@
 package opengl.Zh0k.solarsystem;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
 import java.util.*;
 import java.nio.*;
 import javax.microedition.khronos.opengles.GL10;
 public class Planet
 {
+    private Bitmap bitmap;
     FloatBuffer m_VertexData;
     FloatBuffer m_NormalData;
     FloatBuffer m_ColorData;
@@ -13,10 +17,20 @@ public class Planet
     float m_Radius;
     int m_Stacks, m_Slices;
 
+
+    public Bitmap getBitmap() {
+        return bitmap;
+    }
+
+    public void setBitmap(Bitmap bitmap) {
+        this.bitmap = bitmap;
+    }
+
     public float[] m_Pos = {0.0f, 0.0f, 0.0f};
 
-    public Planet(int stacks, int slices, float radius, float squash)
+    public Planet(Bitmap bitmap , int stacks, int slices, float radius, float squash)
     {
+        this.bitmap = bitmap;
         this.m_Stacks = stacks;
         this.m_Slices = slices;
         this.m_Radius = radius;
@@ -135,6 +149,7 @@ public class Planet
 
     public void draw(GL10 gl)
     {
+
         gl.glMatrixMode(GL10.GL_MODELVIEW);
 
         gl.glEnable(GL10.GL_CULL_FACE);
@@ -150,4 +165,7 @@ public class Planet
 
         gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, (m_Slices+1)*2*(m_Stacks-1)+2);
     }
+
+
+
 }

@@ -5,11 +5,9 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="error" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="f6fc7a79-37af-42d5-8180-b0c9e61c0d50" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/sun.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/raw/track.mid" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/CamLayer.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_support_v4.xml" />
@@ -20,6 +18,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/build/source/buildConfig/debug/opengl/Zh0k/solarsystem/BuildConfig.java" afterPath="$PROJECT_DIR$/SolarSystem/build/source/buildConfig/debug/opengl/Zh0k/solarsystem/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/build/source/r/debug/opengl/Zh0k/solarsystem/R.java" afterPath="$PROJECT_DIR$/SolarSystem/build/source/r/debug/opengl/Zh0k/solarsystem/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem-SolarSystem.iml" afterPath="$PROJECT_DIR$/SolarSystem-SolarSystem.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem.iml" afterPath="$PROJECT_DIR$/SolarSystem.iml" />
@@ -99,7 +98,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="127" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1125">
+            <state line="56" column="127" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -108,9 +107,28 @@
       <file leaf-file-name="SolarSystemRenderer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="425" column="29" selection-start="14662" selection-end="14662" vertical-scroll-proportion="0.9191375" vertical-offset="6034" max-vertical-offset="6960">
+            <state line="468" column="0" selection-start="15797" selection-end="15797" vertical-scroll-proportion="0.7803347" vertical-offset="6647" max-vertical-offset="7125">
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sun.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/sun.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Planet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="26" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2535">
+              <folding>
+                <element signature="e#451#452#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,7 +137,7 @@
       <file leaf-file-name="CamLayer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/CamLayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="14" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1215">
+            <state line="41" column="14" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="549" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -513,7 +531,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/res/values-v14/styles.xml" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/res/values-v11/styles.xml" />
@@ -529,6 +546,7 @@
         <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/GLLayer.java" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/CamLayer.java" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java" />
       </list>
     </option>
@@ -697,6 +715,96 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SolarSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SolarSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SolarSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-mdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SolarSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SolarSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SolarSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-hdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SolarSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SolarSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SolarSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -753,6 +861,7 @@
       <recent name="opengl.Zh0k.solarsystem" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/SolarSystem/src/main/res" />
       <recent name="C:\Users\sergio.ropero.oliver\AndroidStudioProjects\SolarSystem\SolarSystem\src\main\java\opengl\Zh0k\solarsystem" />
     </key>
@@ -798,6 +907,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -823,19 +945,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -996,7 +1105,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42507204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27089337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1035,7 +1144,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42528737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7665706" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1064,6 +1173,44 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="127" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="475" column="22" selection-start="16064" selection-end="16064" vertical-scroll-proportion="0.0" vertical-offset="6957" max-vertical-offset="7425">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/sun.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="31" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2640">
+          <folding>
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/CamLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="14" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="19" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1155">
@@ -1099,7 +1246,10 @@
     <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="131" column="23" selection-start="5161" selection-end="5161" vertical-scroll-proportion="0.0" vertical-offset="1965" max-vertical-offset="2370">
-          <folding />
+          <folding>
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1260,19 +1410,34 @@
         <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="23" selection-start="5161" selection-end="5161" vertical-scroll-proportion="0.0" vertical-offset="1903" max-vertical-offset="2340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="72" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding>
             <element signature="e#552#570#0" expanded="true" />
             <element signature="e#721#739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="127" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/sun.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="26" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2535">
+          <folding>
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1284,16 +1449,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="127" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="425" column="29" selection-start="14662" selection-end="14662" vertical-scroll-proportion="0.9191375" vertical-offset="6034" max-vertical-offset="6960">
+        <state line="468" column="0" selection-start="15797" selection-end="15797" vertical-scroll-proportion="0.7803347" vertical-offset="6647" max-vertical-offset="7125">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

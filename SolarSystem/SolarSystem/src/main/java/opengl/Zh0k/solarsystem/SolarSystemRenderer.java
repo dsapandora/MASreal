@@ -5,6 +5,8 @@ import javax.microedition.khronos.opengles.GL10;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
 import android.hardware.Sensor;
@@ -13,6 +15,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
+import android.opengl.GLUtils;
 import android.util.Log;
 import android.view.Display;
 import android.view.SurfaceHolder;
@@ -58,12 +61,15 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public final static int SS_SUNLIGHT= GL10.GL_LIGHT0;
     public final static int SS_FILLLIGHT1= GL10.GL_LIGHT1;
     public final static int SS_FILLLIGHT2= GL10.GL_LIGHT2;
-    private float sunangle;
+    private int[] textures = new int[1];
+    Context ac;
+
 
 
     public SolarSystemRenderer(Activity c,boolean useTranslucentBackground)
     {
         super(c);
+        ac=c.getApplicationContext();
 
         //Calculate Boundry
         Display display = c.getWindowManager().getDefaultDisplay();
@@ -80,33 +86,34 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         m_Eyeposition[X_VALUE] = 0.0f;  //1
         m_Eyeposition[Y_VALUE] = 0.0f;
         m_Eyeposition[Z_VALUE] = 5.0f;
+        Bitmap bitmap = BitmapFactory.decodeResource(c.getResources(), R.drawable.sun);
 
-        m_Mercury= new Planet(50, 50, .03f, 1.0f);  //2
+        m_Mercury= new Planet(bitmap,50, 50, .03f, 1.0f);  //2
         m_Mercury.setPosition(0.0f, 0.0f, -0.6f);  //3
 
-        m_Venus = new Planet(50, 50, .06f, 1.0f);
+        m_Venus = new Planet(bitmap,50, 50, .06f, 1.0f);
         m_Venus.setPosition(0.0f, 0.0f, -0.75f);
 
-        m_Earth= new Planet(50, 50, .06f, 1.0f);  //2
+        m_Earth= new Planet(bitmap,50, 50, .06f, 1.0f);  //2
         m_Earth.setPosition(0.0f, 0.0f, -0.9f);  //3
 
-        m_Mars= new Planet(50, 50, .04f, 1.0f);  //
+        m_Mars= new Planet(bitmap,50, 50, .04f, 1.0f);  //
         m_Mars.setPosition(0.0f, 0.0f, -1.0f);
 
-        m_Jupiter= new Planet(50, 50, 0.2f, 1.0f);  //
+        m_Jupiter= new Planet(bitmap,50, 50, 0.2f, 1.0f);  //
         m_Jupiter.setPosition(0.0f, 0.0f, -1.5f);
 
-        m_Saturn= new Planet(50, 50, 0.1f, 1.0f);  //
+        m_Saturn= new Planet(bitmap,50, 50, 0.1f, 1.0f);  //
         m_Saturn.setPosition(0.0f, 0.0f, -1.8f);
 
-        m_Urano= new Planet(50, 50, 0.09f, 1.0f);  //
+        m_Urano= new Planet(bitmap,50, 50, 0.09f, 1.0f);  //
         m_Urano.setPosition(0.0f, 0.0f, -2.0f);
 
 
-        m_Netptune= new Planet(50, 50, 0.09f, 1.0f);  //
+        m_Netptune= new Planet(bitmap,50, 50, 0.09f, 1.0f);  //
         m_Netptune.setPosition(0.0f, 0.0f, -2.3f);
 
-        m_Sun= new Planet(50, 50, .5f, 1.0f);  //4
+        m_Sun= new Planet(bitmap,50, 50, .5f, 1.0f);  //4
         m_Sun.setPosition(0.0f, 0.0f, 0.0f);  //5
 
     }
@@ -124,6 +131,9 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
 
         gl.glEnable(GL10.GL_DEPTH_TEST);
         gl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);
+        loadGLTexture(gl, ac);
+        // bind the previously generated texture
+        gl.glBindTexture(GL10.GL_TEXTURE_2D, textures[0]);
 
         //bindCameraTexture(gl);
         gl.glLoadIdentity();
@@ -456,4 +466,5 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
     }
+
 }
