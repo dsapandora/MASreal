@@ -33,9 +33,7 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public final static int X_VALUE= 0;
     public final static int Y_VALUE= 1;
     public final static int Z_VALUE= 2;
-    Planet m_Earth;
-    Planet m_Mercury;
-    Planet m_Sun;
+    Planet m_Earth,m_Mercury,m_Sun,m_Venus,m_Mars,m_Jupiter,m_Saturn,m_Netptune,m_Urano;
     float[] m_Eyeposition = {0.0f, 0.0f, 0.0f};
 
 
@@ -58,13 +56,32 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         m_Eyeposition[Y_VALUE] = 0.0f;
         m_Eyeposition[Z_VALUE] = 5.0f;
 
-        m_Mercury= new Planet(50, 50, .04f, 1.0f);  //2
+        m_Mercury= new Planet(50, 50, .03f, 1.0f);  //2
         m_Mercury.setPosition(0.0f, 0.0f, -0.5f);  //3
 
-        m_Earth= new Planet(50, 50, .09f, 1.0f);  //2
-        m_Earth.setPosition(0.0f, 0.0f, -1.5f);  //3
+        m_Venus = new Planet(50, 50, .06f, 1.0f);
+        m_Venus.setPosition(0.0f, 0.0f, -0.7f);
 
-        m_Sun= new Planet(50, 50, .3f, 1.0f);  //4
+        m_Earth= new Planet(50, 50, .06f, 1.0f);  //2
+        m_Earth.setPosition(0.0f, 0.0f, -0.9f);  //3
+
+        m_Mars= new Planet(50, 50, .04f, 1.0f);  //
+        m_Mars.setPosition(0.0f, 0.0f, -1.0f);
+
+        m_Jupiter= new Planet(50, 50, 0.2f, 1.0f);  //
+        m_Jupiter.setPosition(0.0f, 0.0f, -1.5f);
+
+        m_Saturn= new Planet(50, 50, 0.1f, 1.0f);  //
+        m_Saturn.setPosition(0.0f, 0.0f, -1.8f);
+
+        m_Urano= new Planet(50, 50, 0.09f, 1.0f);  //
+        m_Urano.setPosition(0.0f, 0.0f, -2.0f);
+
+
+        m_Netptune= new Planet(50, 50, 0.09f, 1.0f);  //
+        m_Netptune.setPosition(0.0f, 0.0f, -2.3f);
+
+        m_Sun= new Planet(50, 50, .5f, 1.0f);  //4
         m_Sun.setPosition(0.0f, 0.0f, 0.0f);  //5
 
     }
@@ -77,7 +94,7 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         float white[]={1.0f, 1.0f, 1.0f, 1.0f};
         float cyan[]={0.0f, 1.0f, 1.0f, 1.0f};
         float black[]={0.0f, 0.0f, 0.0f, 0.0f}; //2
-        float orbitalIncrement= 1.25f; //3
+        float orbitalIncrement= 0.25f; //3
         float[] sunPos={0.0f, 0.0f, 0.0f, 1.0f};
 
         gl.glEnable(GL10.GL_DEPTH_TEST);
@@ -99,11 +116,35 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_SPECULAR, makeFloatBuffer(white));
         gl.glPushMatrix();   //7
         angle+=orbitalIncrement;   //8
-        gl.glRotatef(angle, 0.0f, 1.0f, 0.0f);   //9
-        executePlanet(m_Earth, gl);   //10
-        gl.glRotatef(angle +5f, 0.0f, 1.0f, 0.0f);   //10.5
+        gl.glRotatef(angle + 4f, 0.0f, 1.0f, 0.0f);   //10.5
         executePlanet(m_Mercury, gl);
+
+        gl.glRotatef(angle +3f, 0.0f, 1.0f, 0.0f);   //9
+        executePlanet(m_Venus, gl);
+
+        gl.glRotatef(angle+2.5f, 0.0f, 1.0f, 0.0f);   //9
+        executePlanet(m_Earth, gl);
+
+        gl.glRotatef(angle+2f, 0.0f, 1.0f, 0.0f);   //9
+        executePlanet(m_Mars, gl);   //10
+
+        gl.glRotatef(angle+1.5f, 0.0f, 1.0f, 0.0f);   //9
+        executePlanet(m_Jupiter, gl);   //10
+
+        gl.glRotatef(angle+1f, 0.0f, 1.0f, 0.0f);   //9
+        executePlanet(m_Saturn, gl);   //10
+
+        gl.glRotatef(angle, 0.0f, 1.0f, 0.0f);   //9
+        executePlanet(m_Saturn, gl);   //10
+
+        gl.glRotatef(angle-1, 0.0f, 1.0f, 0.0f);   //9
+        executePlanet(m_Urano, gl);   //10
+
+        gl.glRotatef(angle-2, 0.0f, 1.0f, 0.0f);   //9
+        executePlanet(m_Netptune, gl);   //10
+
         gl.glPopMatrix();   //11
+
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_EMISSION, makeFloatBuffer(paleYellow));
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_SPECULAR, makeFloatBuffer(paleYellow)); //13
         executePlanet(m_Sun, gl); //14
