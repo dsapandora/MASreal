@@ -2,6 +2,9 @@ package com.dsalab.masreal;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
+import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -9,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
+import android.view.ViewGroup;
+import android.view.WindowManager;
 
 import com.google.android.glass.touchpad.Gesture;
 import com.google.android.glass.touchpad.GestureDetector;
@@ -16,29 +21,28 @@ import com.google.android.glass.touchpad.GestureDetector;
 public class MainActivity extends Activity {
     // For tap event
     private GestureDetector mGestureDetector;
-    private static final String TAG = "MainActivity"; 
+    private static final String TAG = "MainActivity";
 
-    private FacePreview mPreview;
+    private CamLayer mPreview;
+    static int counter=0;
+    private SolarSystemRenderer glView;
+
 
     @Override
     protected void onDestroy()
     {
-    	mPreview.cameraReleased();
+
         super.onDestroy();
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG,"onCreate() called.");
-
-        // For gesture handling.
-        mGestureDetector = createGestureDetector(this);
-        
-        // Create our Preview view and set it as the content of our activity.
-       	mPreview = new FacePreview(this);
-       	setContentView(mPreview);
+        counter++;
+        if (counter==2) {
+        //    MediaPlayer mp=MediaPlayer.create(this, R.raw.track);
+         //   mp.start();
+        }
     }
 
     @Override
@@ -48,7 +52,7 @@ public class MainActivity extends Activity {
             // Stop the preview and release the camera.
             // Execute your logic as quickly as possible
             // so the capture happens quickly.
-        	mPreview.cameraReleased();
+
             return false;
         }
         else if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) {
@@ -70,14 +74,20 @@ public class MainActivity extends Activity {
     
     @Override
     protected void onPause() {
-        mPreview.cameraReleased();
         super.onPause();
     }
     
     @Override
     public void onResume() {
         super.onResume();
-       	mPreview.getCameraInstance();
+
+        glView=new  SolarSystemRenderer(this,true);
+
+       // mPreview = new CamLayer(this, glView);
+
+        setContentView(glView);
+        //addContentView(mPreview, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
+
     }
 
     @Override
@@ -92,7 +102,6 @@ public class MainActivity extends Activity {
         // Handle item selection.
         switch (item.getItemId()) {
             case R.id.menu_stop:
-            	mPreview.cameraReleased();
             	return true;
             default:
                 return super.onOptionsItemSelected(item);
