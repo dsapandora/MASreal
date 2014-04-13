@@ -7,6 +7,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.opengl.GLSurfaceView;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -17,8 +18,19 @@ import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 
+import com.dsalab.masreal.conexion.conexion;
 import com.google.android.glass.touchpad.Gesture;
 import com.google.android.glass.touchpad.GestureDetector;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends Activity {
     // For tap event
@@ -29,6 +41,7 @@ public class MainActivity extends Activity {
     static int counter=0;
     private SolarSystemRenderer glView;
     private SensorManager sManager;
+    private SatellitelTask mAuthTask;
 
 
     @Override
@@ -47,6 +60,7 @@ public class MainActivity extends Activity {
         //    MediaPlayer mp=MediaPlayer.create(this, R.raw.track);
          //   mp.start();
         }
+        callTribunal();
     }
 
     @Override
@@ -164,6 +178,53 @@ public class MainActivity extends Activity {
     private void handleGestureSwipeLeft()
     {
     	 Log.d(TAG,"handleGestureSwipeLeft() called.");
+    }
+
+    public void callTribunal(){
+
+
+        List<NameValuePair> postInfo = new ArrayList<NameValuePair>();
+
+        mAuthTask = new SatellitelTask();
+        mAuthTask.execute(postInfo);
+
+    }
+
+    public class SatellitelTask extends AsyncTask<List<NameValuePair>, Void, HttpResponse > {
+        /**
+         * Función que crea el thread que corre en el background
+         * */
+
+
+        @Override
+        protected HttpResponse doInBackground(List<NameValuePair>... params) {
+            return conexion.postCedula(getApplicationContext(), params[0]);
+        }
+
+        /** Método que hace el cambio de actividad cuando el login fue un exito*/
+
+        @Override
+        protected void onPostExecute(final HttpResponse response) {
+            mAuthTask = null;
+            try {
+                String mensaje_respuesta = EntityUtils.toString(response.getEntity());
+                Log.e("Mensaje",mensaje_respuesta);
+                try {
+                    JSONObject nuevo = new JSONObject(mensaje_respuesta);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+
+            }
+
+
+
+        }
+
     }
     
 }

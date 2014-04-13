@@ -1,9 +1,11 @@
 package com.dsalab.masreal;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
 import android.hardware.Sensor;
@@ -12,13 +14,32 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
+import android.os.AsyncTask;
 import android.util.Log;
 import android.view.Display;
 import android.view.SurfaceHolder;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
+import com.dsalab.masreal.conexion.conexion;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -61,7 +82,6 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public final static int SS_FILLLIGHT2= GL10.GL_LIGHT2;
     private int[] textures = new int[1];
     Context ac;
-
 
 
     public SolarSystemRenderer(Activity c,boolean useTranslucentBackground)
@@ -119,7 +139,6 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public void onDrawFrame(GL10 gl)
     {
         onDrawFrameCounter++;
-
         float paleYellow[]={1.0f, 1.0f, 0.3f, 1.0f}; //1
         float white[]={1.0f, 1.0f, 1.0f, 1.0f};
         float cyan[]={0.0f, 1.0f, 1.0f, 1.0f};
@@ -465,4 +484,4 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
 
     }
 
-}
+    }
