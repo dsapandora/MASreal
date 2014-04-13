@@ -1,28 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState />
+    </option>
+  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_login.xml">
+        <config>
+          <device>Nexus 4</device>
+          <state>Landscape</state>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_main.xml">
+        <config>
+          <device>Nexus 4</device>
+          <state>Landscape</state>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6fc7a79-37af-42d5-8180-b0c9e61c0d50" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/app_marslander.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/lander_chute.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/lander_crashed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/lander_firing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/lander_plain.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/navbarnavlogo.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/sun.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/raw/track.mid" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/CamLayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ComAndroidSupportAppcompatV71901_aar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__ComAndroidSupportAppcompatV71901_aar.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_support_v4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__support_v4_19_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MarsLander.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MarsLanderView.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/SolarSystem-SolarSystem.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_login.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/arielvernaza.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/login.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/layout/marslander_layout.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_19_0_1.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/sergio_ropero_oliver.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SolarSystem/build/source/buildConfig/debug/opengl/Zh0k/solarsystem/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SolarSystem/build/source/r/debug/opengl/Zh0k/solarsystem/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SolarSystem/libs/android-support-v4.jar" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SolarSystem/build/res/all/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/layout/fragment_login.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SolarSystem/build/res/all/debug/menu/main.xml" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/menu/login.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/build/source/buildConfig/debug/opengl/Zh0k/solarsystem/BuildConfig.java" afterPath="$PROJECT_DIR$/SolarSystem/build/source/buildConfig/debug/opengl/Zh0k/solarsystem/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/build/source/r/debug/opengl/Zh0k/solarsystem/R.java" afterPath="$PROJECT_DIR$/SolarSystem/build/source/r/debug/opengl/Zh0k/solarsystem/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem-SolarSystem.iml" afterPath="$PROJECT_DIR$/SolarSystem-SolarSystem.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem.iml" afterPath="$PROJECT_DIR$/SolarSystem.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java" afterPath="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/build.gradle" afterPath="$PROJECT_DIR$/SolarSystem/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
@@ -31,6 +71,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SolarSystem/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/SolarSystem/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SolarSystem.iws" />
@@ -95,41 +136,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
+      <file leaf-file-name="SolarSystemRenderer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="127" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1275">
+            <state line="44" column="27" selection-start="1453" selection-end="1453" vertical-scroll-proportion="-14.1728115" vertical-offset="6406" max-vertical-offset="6840">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SolarSystemRenderer.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="468" column="0" selection-start="15797" selection-end="15797" vertical-scroll-proportion="0.7803347" vertical-offset="6647" max-vertical-offset="7125">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="52" column="7" selection-start="1595" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1200">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sun.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/sun.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Planet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java">
+      <file leaf-file-name="login.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="26" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2535">
-              <folding>
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#480#481#0" expanded="true" />
-              </folding>
+            <state line="21" column="80" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,7 +166,64 @@
       <file leaf-file-name="CamLayer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/CamLayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="14" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="549" max-vertical-offset="1215">
+            <state line="41" column="14" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="417" max-vertical-offset="1215">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_login.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_login.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="48" column="0" selection-start="1824" selection-end="1824" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SolarSystem-SolarSystem.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem-SolarSystem.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="577" max-vertical-offset="1230">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarsLander.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MarsLander.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="132" column="41" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="2370">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SolarSystem-SolarSystem.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/SolarSystem-SolarSystem.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="14" selection-start="5608" selection-end="5608" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="40" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
@@ -441,6 +527,11 @@
                 <option name="name" value="preReleaseBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:19.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SolarSystem" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV71901Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/SolarSystem" />
                 <option name="name" value="prepareDebugDependencies" />
               </ExternalTaskPojo>
@@ -542,11 +633,20 @@
         <option value="$PROJECT_DIR$/SolarSystem/build.gradle" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/GLLayer.java" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/CamLayer.java" />
-        <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MarsLander.java" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/res/layout/marslander_layout.xml" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MarsLanderView.java" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/res/layout/fragment_login.xml" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/SolarSystem/SolarSystem-SolarSystem.iml" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java" />
+        <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/login.java" />
         <option value="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java" />
       </list>
     </option>
@@ -569,6 +669,13 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+  <component name="ProjectStructureProblems">
+    <ignored-problems>
+      <problem id="unused-library(library:project:Gradle: android-support-v4)" />
+      <problem id="unused-library(library:project:Gradle: ComAndroidSupportAppcompatV71901.aar)" />
+      <problem id="unused-library(library:project:Gradle: support-v4-19.0.1)" />
+    </ignored-problems>
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -583,6 +690,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -590,15 +698,9 @@
               <option name="myItemId" value="SolarSystem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -610,10 +712,6 @@
               <option name="myItemId" value="SolarSystem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -626,14 +724,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -656,10 +746,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -686,10 +772,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raw" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -719,67 +801,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xhdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-mdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -813,27 +835,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SolarSystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gradle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wrapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -848,7 +851,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Android SDK" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="00191eb11f1f2f" />
@@ -864,6 +867,12 @@
       <recent name="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/SolarSystem/src/main/res" />
       <recent name="C:\Users\sergio.ropero.oliver\AndroidStudioProjects\SolarSystem\SolarSystem\src\main\java\opengl\Zh0k\solarsystem" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem" />
+      <recent name="$PROJECT_DIR$/SolarSystem/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/SolarSystem/src/main/res" />
+      <recent name="$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="opengl.Zh0k.solarsystem" />
@@ -907,19 +916,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -945,6 +941,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1033,7 +1042,12 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="mySSHConnectionTimeout" value="30000" />
@@ -1048,6 +1062,7 @@
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
     <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
@@ -1098,6 +1113,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42507204" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1105,7 +1121,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27089337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33429396" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1118,7 +1134,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1132,22 +1148,23 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892704" sideWeight="0.6711004" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.6711004" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708934" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.7665706" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.59942365" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1173,91 +1190,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="127" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="475" column="22" selection-start="16064" selection-end="16064" vertical-scroll-proportion="0.0" vertical-offset="6957" max-vertical-offset="7425">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/sun.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="31" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2640">
-          <folding>
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/CamLayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="14" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="19" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="65" selection-start="2870" selection-end="2870" vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="4755">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="26" selection-start="1102" selection-end="1102" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="2550">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="23" selection-start="5161" selection-end="5161" vertical-scroll-proportion="0.0" vertical-offset="1965" max-vertical-offset="2370">
-          <folding>
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/android_support_v4.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210" />
@@ -1358,26 +1290,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="255" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="24" selection-start="4281" selection-end="4281" vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="2550" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -1405,40 +1320,115 @@
         <state line="18" column="0" selection-start="570" selection-end="570" vertical-scroll-proportion="0.617849" vertical-offset="0" max-vertical-offset="437" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="72" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding>
-            <element signature="e#552#570#0" expanded="true" />
-            <element signature="e#721#739#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="127" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0" vertical-offset="589" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/sun.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="1" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-17/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17396" column="68" selection-start="673388" selection-end="673388" vertical-scroll-proportion="0.49462366" vertical-offset="257590" max-vertical-offset="272670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/layout/marslander_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="28" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/drawable-land/marstraining1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/drawable-hdpi/navbarnavlogo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="5" selection-start="0" selection-end="1097" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/layout/fragment_login.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="424">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="44" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="24" selection-start="4281" selection-end="4281" vertical-scroll-proportion="5.0800915" vertical-offset="0" max-vertical-offset="2550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/Planet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="26" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2535">
+        <state line="8" column="19" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2535">
           <folding>
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#524#525#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MarsLanderView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="231" column="23" selection-start="8049" selection-end="8049" vertical-scroll-proportion="0.0" vertical-offset="3465" max-vertical-offset="14415">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1449,12 +1439,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem-SolarSystem.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/SolarSystem-SolarSystem.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="14" selection-start="5608" selection-end="5608" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="40" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1824" selection-end="1824" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MarsLander.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="41" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.0" vertical-offset="1691" max-vertical-offset="2490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="80" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="7" selection-start="1595" selection-end="1668" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="468" column="0" selection-start="15797" selection-end="15797" vertical-scroll-proportion="0.7803347" vertical-offset="6647" max-vertical-offset="7125">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="44" column="27" selection-start="1453" selection-end="1453" vertical-scroll-proportion="-14.1728115" vertical-offset="6406" max-vertical-offset="6840">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1475,7 +1522,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Android-Gradle (SolarSystem)|Android-Gradle</last-edited>
+          <last-edited>Android</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

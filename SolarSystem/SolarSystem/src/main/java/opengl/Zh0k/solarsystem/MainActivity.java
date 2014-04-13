@@ -1,5 +1,6 @@
 package opengl.Zh0k.solarsystem;
 
+import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
@@ -7,7 +8,11 @@ import android.media.MediaPlayer;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.app.Activity;
+import android.text.Layout;
+import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
@@ -61,7 +66,9 @@ public class MainActivity extends Activity {
 
         setContentView(glView);
         addContentView(mPreview, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
+
     }
+
     protected void onPause() {
         super.onPause();
         sManager.unregisterListener(glView);
@@ -76,4 +83,7 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         return true;
     }
+
+
+
 }

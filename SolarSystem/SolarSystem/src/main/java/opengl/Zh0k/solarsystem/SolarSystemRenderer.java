@@ -4,7 +4,10 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.PixelFormat;
@@ -19,6 +22,7 @@ import android.opengl.GLUtils;
 import android.util.Log;
 import android.view.Display;
 import android.view.SurfaceHolder;
+import android.view.View;
 
 import java.lang.Math;
 import java.nio.ByteBuffer;
@@ -131,19 +135,18 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
 
         gl.glEnable(GL10.GL_DEPTH_TEST);
         gl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);
-        loadGLTexture(gl, ac);
         // bind the previously generated texture
         gl.glBindTexture(GL10.GL_TEXTURE_2D, textures[0]);
 
-        //bindCameraTexture(gl);
+        bindCameraTexture(gl);
         gl.glLoadIdentity();
-        Log.e("MENSAJE", xPosicion + " " + yPosicion);
 
         gl.glRotatef((float)Math.sin(onDrawFrameCounter/50f)*2f,0,-1,0);
 
         GLU.gluLookAt(gl, 0, 0, 0.42f, 0, 0, 0, 0, 1, 0);
 
         //CAMARA
+
 
         // move camera a distance r away from the center
         gl.glTranslatef(0, 0, -zPosicion);
@@ -155,6 +158,7 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
 // move to center of circle
         gl.glTranslatef(0.0f, 0.0f, zPosicion);
         //FIN CAMARA
+
 
 
 
@@ -450,8 +454,8 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
             yVelocity=0.0f;
         }
 
-        if (zPosicion > 20) {
-            zPosicion = 20;
+        if (zPosicion > 10) {
+            zPosicion = 10;
             zVelocity=0.0f;
         }
 
@@ -466,5 +470,9 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
     }
+
+
+
+
 
 }
