@@ -1,10 +1,17 @@
 package com.dsalab.masreal;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
+import android.util.Log;
+import android.view.Display;
 import android.view.SurfaceHolder;
 
 import java.nio.ByteBuffer;
@@ -17,7 +24,13 @@ import javax.microedition.khronos.opengles.GL10;
 /**
  * Created by arielvernaza on 04/13/14.
  */
-public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.Renderer, Camera.PreviewCallback,SurfaceHolder.Callback {
+public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.Renderer, Camera.PreviewCallback,SurfaceHolder.Callback, SensorEventListener {
+
+    private SensorManager sManager = null;
+    public float frametime = 0.06f;
+    public float xPosicion, xAcceleracion,xVelocity = 0.0f;
+    public float yPosicion, yAcceleration,yVelocity = 0.0f;
+    public float xmax,ymax;
 
 
     private Planet mPlanet;
@@ -25,6 +38,9 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     int onDrawFrameCounter=1;
     FloatBuffer cubeBuff;
     FloatBuffer texBuff;
+    float[] mGravity;
+    float[] mGeomagnetic;
+
 
     int[] cameraTexture;
     byte[] glCameraFrame=new byte[256*256]; //size of a texture must be a power of 2
@@ -42,9 +58,16 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public final static int SS_FILLLIGHT2= GL10.GL_LIGHT2;
     private float sunangle;
 
-    public SolarSystemRenderer(Context c,boolean useTranslucentBackground)
+
+    public SolarSystemRenderer(Activity c,boolean useTranslucentBackground)
     {
         super(c);
+
+        //Calculate Boundry
+        Display display = c.getWindowManager().getDefaultDisplay();
+        xmax = (float)display.getWidth();
+        ymax = (float)display.getHeight();
+
         this.setEGLConfigChooser(5, 6, 5, 8, 16, 0);
         super.setEGLConfigChooser(8 , 8, 8, 8, 16, 0);
 
@@ -351,4 +374,38 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
             0.0f, 0.625f
     };
 
+    @Override
+    public void onSensorChanged(SensorEvent sensorEvent) {
+
+        if(sensorEvent.sensor.getType()==Sensor.TYPE_ACCELEROMETER)
+        {
+            //mGravity = sensorEvent.values;
+            xAcceleracion = sensorEvent.values[0];
+            yAcceleration = sensorEvent.values[1];
+
+            ActualizaCielo();
+        }
+
+    }
+
+    private void ActualizaCielo() {
+        //Calculo
+        xVelocity += (xAcceleracion * frametime);
+        yVelocity += (yAcceleration * frametime);
+
+        //Calc distance travelled in that time
+        float xS = (xVelocity/2)*frametime;
+        float yS = (yVelocity/2)*frametime;
+
+        //Add to position negative due to sensor
+        //readings being opposite to what we want!
+        yPosicion -= xS;
+        xPosicion += yS;
+
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
 }

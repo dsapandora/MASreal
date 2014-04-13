@@ -3,6 +3,8 @@ package com.dsalab.masreal;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
@@ -26,6 +28,7 @@ public class MainActivity extends Activity {
     private CamLayer mPreview;
     static int counter=0;
     private SolarSystemRenderer glView;
+    private SensorManager sManager;
 
 
     @Override
@@ -38,6 +41,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sManager =(SensorManager)getSystemService(SENSOR_SERVICE);
         counter++;
         if (counter==2) {
         //    MediaPlayer mp=MediaPlayer.create(this, R.raw.track);
@@ -74,14 +78,17 @@ public class MainActivity extends Activity {
     
     @Override
     protected void onPause() {
+        sManager.unregisterListener(glView);
         super.onPause();
     }
     
     @Override
     public void onResume() {
         super.onResume();
-
         glView=new  SolarSystemRenderer(this,true);
+        sManager.registerListener(glView,sManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),SensorManager.SENSOR_DELAY_FASTEST);
+        sManager.registerListener(glView,sManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD),SensorManager.SENSOR_DELAY_FASTEST);
+
 
        // mPreview = new CamLayer(this, glView);
 
