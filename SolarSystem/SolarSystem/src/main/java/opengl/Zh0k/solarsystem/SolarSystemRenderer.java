@@ -86,7 +86,7 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         GLU.gluLookAt(gl, 0, 0, 4.2f, 0, 0, 0, 0, 1, 0);
         //gl.glRotatef(sunangle,0.0f, 1.0f, 0.0f); //Rotate the camera image
         //gl.glRotatef(onDrawFrameCounter,1,0,0); //Rotate the camera image
-      //   gl.glRotatef((float)Math.sin(onDrawFrameCounter/20.0f)*40,0,1,0); //Rotate the camera image
+         gl.glRotatef((float)Math.sin(onDrawFrameCounter/20f)*10f,0,1,0); //Rotate the camera image
        //  gl.glRotatef((float)Math.cos(onDrawFrameCounter/40.0f)*40,0,0,1); //Rotate the camera ima
 
         gl.glPushMatrix();   //4
@@ -103,7 +103,6 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         executePlanet(m_Mercury, gl);
         gl.glPopMatrix();   //11
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_EMISSION, makeFloatBuffer(paleYellow));
-        gl.glRotatef((float)Math.cos(angle/20.0f)*40, 0.0f, 1.0f, 0.0f);   //10.5
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_SPECULAR, makeFloatBuffer(paleYellow)); //13
         executePlanet(m_Sun, gl); //14
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_EMISSION, makeFloatBuffer(black)); //15
