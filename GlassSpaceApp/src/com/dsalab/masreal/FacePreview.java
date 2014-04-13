@@ -26,7 +26,7 @@ import android.view.SurfaceView;
 
 
 public class FacePreview extends SurfaceView implements SurfaceHolder.Callback, Camera.PreviewCallback {
-    private final Bitmap ball;
+    private Bitmap planetfix;
     private SurfaceHolder mHolder;
     private Camera mCamera;
     private Bitmap mWorkBitmap;
@@ -49,7 +49,7 @@ public class FacePreview extends SurfaceView implements SurfaceHolder.Callback, 
     
     public FacePreview(Context context) {
         super(context);
-        ball = BitmapFactory.decodeResource(getResources(), R.drawable.globe);
+
         // Install a SurfaceHolder.Callback so we get notified when the
         // underlying surface is created and destroyed.
         mHolder = getHolder();
@@ -252,13 +252,15 @@ public class FacePreview extends SurfaceView implements SurfaceHolder.Callback, 
     @Override
     protected void onDraw(Canvas canvas)
     {
+        Bitmap ball = BitmapFactory.decodeResource(getResources(), R.drawable.globe);
+
         Log.d(TAG,"onDraw");
         super.onDraw(canvas);
 
         if(mWorkBitmap != null){
         	xRatio = getWidth() * 1.0f / mWorkBitmap.getWidth();
 		    yRatio = getHeight() * 1.0f / mWorkBitmap.getHeight();
-		
+            planetfix= Bitmap.createScaledBitmap(ball, 150, 150, true);
 		    for (int i = 0; i < eyesMidPts.length; i++)
 		    {
 		    	if (eyesMidPts[i] != null)
@@ -271,7 +273,7 @@ public class FacePreview extends SurfaceView implements SurfaceHolder.Callback, 
 		        }
 		    }
 
-            canvas.drawBitmap(ball, 0, 0, null);
+            canvas.drawBitmap(planetfix, 0, 0, null);
         }
     }
    	
