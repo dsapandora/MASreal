@@ -94,10 +94,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="19" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1035">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SolarSystemRenderer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="74" selection-start="2573" selection-end="2640" vertical-scroll-proportion="0.24324325" vertical-offset="1155" max-vertical-offset="4665">
+            <state line="105" column="42" selection-start="3847" selection-end="3847" vertical-scroll-proportion="0.5882353" vertical-offset="1365" max-vertical-offset="4770">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -977,14 +986,14 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42651296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42651296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.6711004" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24892704" sideWeight="0.6711004" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1241,13 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="44" selection-start="1677" selection-end="1677" vertical-scroll-proportion="0.0" vertical-offset="382" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/CamLayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="35" selection-start="431" selection-end="431" vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="1215">
@@ -1255,9 +1257,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="19" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="74" selection-start="2573" selection-end="2640" vertical-scroll-proportion="0.24324325" vertical-offset="1155" max-vertical-offset="4665">
+        <state line="105" column="42" selection-start="3847" selection-end="3847" vertical-scroll-proportion="0.5882353" vertical-offset="1365" max-vertical-offset="4770">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

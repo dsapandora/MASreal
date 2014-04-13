@@ -23,13 +23,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../SolarSystem/src/main/res/values/dimens.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../SolarSystem/src/main/res/values/strings.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../SolarSystem/src/main/res/values/styles.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SolarSystem/SolarSystem/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../SolarSystem/SolarSystem/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SolarSystem/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java" afterPath="$PROJECT_DIR$/../SolarSystem/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SolarSystem/SolarSystem/SolarSystem-SolarSystem.iml" afterPath="$PROJECT_DIR$/../SolarSystem/SolarSystem/SolarSystem-SolarSystem.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SolarSystem/SolarSystem.iml" afterPath="$PROJECT_DIR$/../SolarSystem/SolarSystem.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/de/offis/magic/core/GLLayer.java" afterPath="$PROJECT_DIR$/app/src/main/java/de/offis/magic/core/GLLayer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SolarSystem/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java" afterPath="$PROJECT_DIR$/../SolarSystem/SolarSystem/src/main/java/opengl/Zh0k/solarsystem/SolarSystemRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SolarSystem/.idea/misc.xml" afterPath="$PROJECT_DIR$/../SolarSystem/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SolarSystem/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SolarSystem/.idea/workspace.xml" />
     </list>
     <ignored path="SecondTry.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,7 +129,7 @@
       <file leaf-file-name="GLLayer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/de/offis/magic/core/GLLayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="72" selection-start="1364" selection-end="1463" vertical-scroll-proportion="0.33849558" vertical-offset="522" max-vertical-offset="3165">
+            <state line="52" column="21" selection-start="1585" selection-end="1629" vertical-scroll-proportion="0.5707965" vertical-offset="522" max-vertical-offset="3165">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1019,7 +1014,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/de/offis/magic/core/GLLayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="72" selection-start="1364" selection-end="1463" vertical-scroll-proportion="0.33849558" vertical-offset="522" max-vertical-offset="3165">
+        <state line="52" column="21" selection-start="1585" selection-end="1629" vertical-scroll-proportion="0.5707965" vertical-offset="522" max-vertical-offset="3165">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

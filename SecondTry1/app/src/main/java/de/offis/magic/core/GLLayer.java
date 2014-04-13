@@ -50,9 +50,9 @@ public class GLLayer extends GLSurfaceView implements SurfaceHolder.Callback,
 		gl.glLoadIdentity();
 		GLU.gluLookAt(gl, 0, 0, 4.2f, 0, 0, 0, 0, 1, 0);
 		
-		gl.glRotatef(onDrawFrameCounter,1,0,0); //Rotate the camera image
-		gl.glRotatef((float)Math.sin(onDrawFrameCounter/20.0f)*40,0,1,0); //Rotate the camera image
-		gl.glRotatef((float)Math.cos(onDrawFrameCounter/40.0f)*40,0,0,1); //Rotate the camera image
+		gl.glRotatef((float)Math.cos(onDrawFrameCounter/40.0f)*40,1,0,0); //Rotate the camera image
+//		gl.glRotatef((float)Math.sin(onDrawFrameCounter/20.0f)*40,0,1,0); //Rotate the camera image
+//		gl.glRotatef((float)Math.cos(onDrawFrameCounter/40.0f)*40,0,0,1); //Rotate the camera image
 
 		gl.glNormal3f(0,0,1);
 		gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);			

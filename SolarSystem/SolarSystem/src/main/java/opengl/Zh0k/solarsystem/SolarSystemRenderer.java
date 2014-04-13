@@ -32,6 +32,7 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public final static int Y_VALUE= 1;
     public final static int Z_VALUE= 2;
     Planet m_Earth;
+    Planet m_Mercury;
     Planet m_Sun;
     float[] m_Eyeposition = {0.0f, 0.0f, 0.0f};
 
@@ -39,6 +40,7 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public final static int SS_SUNLIGHT= GL10.GL_LIGHT0;
     public final static int SS_FILLLIGHT1= GL10.GL_LIGHT1;
     public final static int SS_FILLLIGHT2= GL10.GL_LIGHT2;
+    private float sunangle;
 
     public SolarSystemRenderer(Context c,boolean useTranslucentBackground)
     {
@@ -54,10 +56,13 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         m_Eyeposition[Y_VALUE] = 0.0f;
         m_Eyeposition[Z_VALUE] = 5.0f;
 
-        m_Earth= new Planet(50, 50, .3f, 1.0f);  //2
-        m_Earth.setPosition(0.0f, 0.0f, -2.0f);  //3
+        m_Mercury= new Planet(50, 50, .04f, 1.0f);  //2
+        m_Mercury.setPosition(0.0f, 0.0f, -0.5f);  //3
 
-        m_Sun= new Planet(50, 50,1.0f, 1.0f);  //4
+        m_Earth= new Planet(50, 50, .09f, 1.0f);  //2
+        m_Earth.setPosition(0.0f, 0.0f, -1.5f);  //3
+
+        m_Sun= new Planet(50, 50, .3f, 1.0f);  //4
         m_Sun.setPosition(0.0f, 0.0f, 0.0f);  //5
 
     }
@@ -73,16 +78,16 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         float orbitalIncrement= 1.25f; //3
         float[] sunPos={0.0f, 0.0f, 0.0f, 1.0f};
 
-        gl.glEnable(GL10.GL_TEXTURE_2D);
+        gl.glEnable(GL10.GL_DEPTH_TEST);
         gl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);
 
         bindCameraTexture(gl);
         gl.glLoadIdentity();
         GLU.gluLookAt(gl, 0, 0, 4.2f, 0, 0, 0, 0, 1, 0);
-
+        //gl.glRotatef(sunangle,0.0f, 1.0f, 0.0f); //Rotate the camera image
         //gl.glRotatef(onDrawFrameCounter,1,0,0); //Rotate the camera image
-         gl.glRotatef((float)Math.sin(onDrawFrameCounter/20.0f)*40,0,1,0); //Rotate the camera image
-         gl.glRotatef((float)Math.cos(onDrawFrameCounter/40.0f)*40,0,0,1); //Rotate the camera ima
+      //   gl.glRotatef((float)Math.sin(onDrawFrameCounter/20.0f)*40,0,1,0); //Rotate the camera image
+       //  gl.glRotatef((float)Math.cos(onDrawFrameCounter/40.0f)*40,0,0,1); //Rotate the camera ima
 
         gl.glPushMatrix();   //4
         gl.glTranslatef(-m_Eyeposition[X_VALUE], -m_Eyeposition[Y_VALUE],-m_Eyeposition[Z_VALUE]);
@@ -94,10 +99,12 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         angle+=orbitalIncrement;   //8
         gl.glRotatef(angle, 0.0f, 1.0f, 0.0f);   //9
         executePlanet(m_Earth, gl);   //10
+        gl.glRotatef(angle +5f, 0.0f, 1.0f, 0.0f);   //10.5
+        executePlanet(m_Mercury, gl);
         gl.glPopMatrix();   //11
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_EMISSION, makeFloatBuffer(paleYellow));
-//12
-        gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_SPECULAR, makeFloatBuffer(black)); //13
+        gl.glRotatef((float)Math.cos(angle/20.0f)*40, 0.0f, 1.0f, 0.0f);   //10.5
+        gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_SPECULAR, makeFloatBuffer(paleYellow)); //13
         executePlanet(m_Sun, gl); //14
         gl.glMaterialfv(GL10.GL_FRONT_AND_BACK, GL10.GL_EMISSION, makeFloatBuffer(black)); //15
         gl.glPopMatrix();
