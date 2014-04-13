@@ -1,0 +1,448 @@
+PDS_VERSION_ID           =  "PDS3"                                            
+DATA_SET_ID              =  "MEX-M-MRS-1/2/3-EXT2-1334-V1.0"                  
+DATA_SET_NAME            =  "MARS EXPRESS MARS MRS 1/2/3                      
+                             EXTENDED MISSION 2 1334 V1.0"                    
+MISSION_ID               =  "MEX"                                             
+MISSION_NAME             =  "MARS EXPRESS"                                    
+ORBIT_NUMBER             =  4807                                              
+PROCESSING_LEVEL_ID      =  3                                                 
+PRODUCT_TYPE             =  "RDR"                                             
+TARGET_NAME              =  "MARS"                                            
+TARGET_TYPE              =  "PLANET"                                          
+OBSERVATION_TYPE         = "Global Gravity"                                   
+INSTRUMENT_HOST_NAME     =  "MARS EXPRESS"                                    
+INSTRUMENT_HOST_ID       =  "MEX"                                             
+INSTRUMENT_NAME          =  "MARS EXPRESS ORBITER RADIO SCIENCE"              
+INSTRUMENT_TYPE          =  "RADIO SCIENCE"                                   
+INSTRUMENT_ID            =  "MRS"                                             
+PRODUCER_ID              =  "RIU_COLOGNE"                                     
+PRODUCER_FULL_NAME       =  "MARTIN PAETZOLD"                                 
+PRODUCER_INSTITUTION_NAME=  "RHEINISCHES INSTITUT FUER UMWELTFORSCHUNG,       
+                             PLANETENFORSCHUNG"                               
+DSN_STATION_NUMBER       =  32                                                
+PRODUCT_CREATION_TIME    =  2009-11-27T16:31:22.000                           
+SPACECRAFT_CLOCK_START_COUNT =  "N/A"                                         
+SPACECRAFT_CLOCK_STOP_COUNT  =  "N/A"                                         
+STANDARD_DATA_PRODUCT_ID =  "IFMS1"                                           
+DATA_QUALITY_ID          =  "N/A"                                             
+DATA_QUALITY_DESC        =  "See the DATASET.CAT for further information      
+                             on the quality of this data set."                
+SPACECRAFT_POINTING_MODE =  "EARTH"                                           
+^SPACECRAFT_POINTING_MODE_DESC=  "MEX_POINTING_MODE_DESC.TXT"                 
+INSTRUMENT_MODE_ID       =  "TWOD_X"                                          
+INSTRUMENT_MODE_DESC     =  "TWO-WAY DUAL-FREQUENCY X-BAND U/L X&S-Band D/L"  
+SOURCE_PRODUCT_ID        =  {"NN13_MEX1_2007_273_OP_D1_184026_0000",          
+                            "NN13_MEX1_2007_273_OP_D1_184026_0001",           
+                            "NN13_MEX1_2007_273_OP_D1_184026_0002",           
+                            "NN13_MEX1_2007_273_OP_D1_184026_0003",           
+                            "NN11_MEX1_2007_273_OP_D1_182918_0000",           
+                            "NN11_MEX1_2007_273_OP_D1_182918_0001",           
+                            "NN11_MEX1_2007_273_OP_D1_182918_0002",           
+                            "NN11_MEX1_2007_273_OP_D1_182918_0003",           
+                            "NN11_MEX1_2007_273_OP_ME_182929_0000",           
+                            "NN11_MEX1_2007_273_OP_ME_182929_0001",           
+                            "NN11_MEX1_2007_273_OP_ME_182929_0002",           
+                            "NN11_MEX1_2007_273_OP_ME_182929_0003",           
+                            "CGIM2730.07N",                                   
+                            "M74UNBWL02_PTW_072731720_00.TAB",                
+                            "NN11_MEX1_2007_273_OP_G2_184006_0000",           
+                            "NN11_MEX1_2007_273_OP_G2_184006_0001",           
+                            "NN11_MEX1_2007_273_OP_G2_184006_0002",           
+                            "NN11_MEX1_2007_273_OP_G2_184006_0003",           
+                            "NN13_MEX1_2007_273_OP_G2_184038_0000",           
+                            "NN13_MEX1_2007_273_OP_G2_184038_0001",           
+                            "NN13_MEX1_2007_273_OP_G2_184038_0002",           
+                            "NN13_MEX1_2007_273_OP_G2_184038_0003"}           
+SOFTWARE_NAME            =  "ESA_IFMS_PROC_ICL_L1A_TO_L2_V3.3"                
+DESCRIPTION              =  "This is a calibrated IFMS Closed Loop Doppler    
+                            file containing skyfrequency, impact parameter,   
+                            observed and calibrated Doppler shift in          
+                            frequency, AGC and Differential Doppler.          
+                            The information of the received signal power is   
+                            added in form of AGC data (Automatic Gain Control 
+                            [dB]) of the ground station system.               
+                            The AGC circuit measures the strength of the in-  
+                            coming signal, then uses that measurement to      
+                            control the gain of a following amplifier so      
+                            that the output level remains constant. If the    
+                            signal level rises and falls, the user will see a 
+                            constant signal while the background noise falls  
+                            and rises.                                        
+                            The SOURCE_PRODUCT_ID mentioned in the label      
+                            header above links to the different data files    
+                            used for processing of the DOPPLER output file.   
+                            The following table describes the possible input  
+                            files.                                            
+                            (Note: - Not all input files have to be used for  
+                                     processing                               
+                                   - Nominal IFMS configuration:              
+                                     - NN11 and NN12: X-Band                  
+                                     - NN13: S-Band)                          
+                            |------------------------------------------------|
+                            |     INPUT FILE         |    DESCRIPTION        |
+                            |------------------------------------------------|
+                            | NN11*****OP_D1***      | IFMS D1X FILE         |
+                            | NN11*****OP_D2***      | IFMS D2X FILE         |
+                            | NN12*****OP_D1***      | IFMS D1X FILE         |
+                            | NN12*****OP_D2***      | IFMS D2X FILE         |
+                            | NN13*****OP_D1***      | IFMS D1S FILE         |
+                            | NN13*****OP_D2***      | IFMS D2S FILE         |
+                            |------------------------------------------------|
+                            | NN11*****OP_G1***      | IFMS AGX FILE         |
+                            | NN11*****OP_G2***      | IFMS AGX FILE         |
+                            | NN12*****OP_G1***      | IFMS AGX FILE         |
+                            | NN12*****OP_G2***      | IFMS AGX FILE         |
+                            | NN13*****OP_G1***      | IFMS AGS FILE         |
+                            | NN13*****OP_G2***      | IFMS AGS FILE         |
+                            |------------------------------------------------|
+                            | NN11*****OP_ME***      | IFMS MET FILE         |
+                            | NN12*****OP_ME***      | IFMS MET FILE         |
+                            | NN13*****OP_ME***      | IFMS MET FILE         |
+                            |------------------------------------------------|
+                            | *UNBWL02_PTW_****.TAB  | UBW PREDICT FILE      |
+                            |------------------------------------------------|
+                            | CGIM****.**N           | CODE KLOBUCHAR FILE   |
+                            |------------------------------------------------|
+                                                                              
+                            For the ESA IFMS input files the original ESA     
+                            IFMS filename is used, which is not PDS compliant.
+                            The equivalent source file with a PDS compliant   
+                            filename can be found in the appropriate LEVEL 1A 
+                            DATA and CALIB directory. The UBW PREDICT FILE    
+                            produced by the Universitaet der Bundeswehr in    
+                            Munich, Germany, can be found in:                 
+                            EXTRAS/ANCILLARY/UNI_BW on the data volume.       
+                            The CGIM CODE KLOBUCHAR FILE containing global    
+                            map information of the Earth ionosphere can be    
+                            downloaded via ftp from the European Internat-    
+                            ional GPS Service (IGS) node CODE (Center for     
+                            Orbit Determination) of the Astronomical Insti-   
+                            tute of the University of Bern (AIUB), Switzer-   
+                            land:                                             
+                            ftp://ftp.unibe.ch/aiub/CODE/                     
+                            For more information see column description."     
+                                                                              
+OBJECT                   =  FILE                                              
+   PRODUCT_ID               =  "M32ICL1L02_D1X_072731829_00.TAB"              
+   RECORD_TYPE              =  FIXED_LENGTH                                   
+   RECORD_BYTES             =     268                                         
+   FILE_RECORDS             =   11559                                         
+   START_TIME               =  2007-09-30T18:29:18.500                        
+   STOP_TIME                =  2007-09-30T21:41:56.500                        
+^DOPPLER_TABLE           =  "M32ICL1L02_D1X_072731829_00.TAB"                 
+   OBJECT                   =  DOPPLER_TABLE                                  
+      NAME                     =  DOPPLER_DATA                                
+      INTERCHANGE_FORMAT       =  ASCII                                       
+      ROWS                     =     11559                                    
+      COLUMNS                  =        17                                    
+      ROW_BYTES                =       268                                    
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 1                                              
+      NAME                   = "SAMPLE NUMBER"                                
+      DATA_TYPE              = ASCII_INTEGER                                  
+      START_BYTE             = 1                                              
+      BYTES                  = 5                                              
+      UNIT                   = "N/A"                                          
+      FORMAT                 = "I5"                                           
+      DESCRIPTION            = "The number of this row in the table,          
+                               starting from 1 in the first row."             
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 2                                              
+      NAME                   = "UTC TIME"                                     
+      DATA_TYPE              = TIME                                           
+      START_BYTE             = 8                                              
+      BYTES                  = 23                                             
+      UNIT                   = "N/A"                                          
+      FORMAT                 = "A23"                                          
+      DESCRIPTION            = "The UTC receiver date and time (t_r)          
+                               of this measurement, in the format             
+                               CCYY-MM-DDTHH:MM:SS.sss"                       
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 3                                              
+      NAME                   = "FRACTIONS OF DAY OF YEAR"                     
+      DATA_TYPE              = ASCII_REAL                                     
+      START_BYTE             = 33                                             
+      BYTES                  = 14                                             
+      UNIT                   = "DAY"                                          
+      FORMAT                 = "F14.10"                                       
+      DESCRIPTION            = "The day-of-year (and fraction)                
+                               corresponding to UTC TIME (column 2)           
+                               where 1.0000000000 is at 0h on 1 January       
+                               of the current year."                          
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 4                                              
+      NAME                   = "EPHEMERIS SECONDS"                            
+      START_BYTE             = 49                                             
+      BYTES                  = 16                                             
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "SECOND"                                       
+      FORMAT                 = "F16.6"                                        
+      DESCRIPTION            = "Seconds from 12h 1 January 2000 TDB           
+                               corresponding to UTC TIME (column 2);          
+                               includes leap seconds, if any."                
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 5                                              
+      NAME                   = "DISTANCE"                                     
+      START_BYTE             = 67                                             
+      BYTES                  = 15                                             
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "KILOMETER"                                    
+      FORMAT                 = "F15.6"                                        
+      DESCRIPTION            = "Propagation observations: For one-way         
+                               observations, the impact parameter of the      
+                               downlink geometric ray with respect to         
+                               the reference body (Sun, planet, minor         
+                               object, etc.) when the photon received at      
+                               UTC TIME was closest to the body. For          
+                               two-way observations, the average of the       
+                               uplink and downlink impact parameters. In      
+                               both cases the calculation is an               
+                               approximation, intended to provide a           
+                               general sense of the observation geometry      
+                               and not meant for precision analysis.          
+                                                                              
+                               Gravity observations: the geometric            
+                               distance of the spacecraft from the center     
+                               of mass of the reference body when the         
+                               spacecraft transmitted the photon which        
+                               was received on Earth at UTC TIME."            
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 6                                              
+      NAME                   = "TRANSMIT FREQUENCY RAMP REFERENCE TIME"       
+      START_BYTE             = 84                                             
+      BYTES                  = 23                                             
+      DATA_TYPE              = TIME                                           
+      UNIT                   = "N/A"                                          
+      FORMAT                 = "A23"                                          
+      DESCRIPTION            = "The time (t0) at which the transmitted        
+                               frequency would have been  f_0  using the      
+                               coefficients  f_0  (column 7) and  df          
+                                (column 8).  At any time  t  within the       
+                               interval when those coefficients are           
+                               valid, the transmitted frequency  f_t  may     
+                               be calculated from                             
+                                                                              
+                               f_t = f_0 + df*(t-t0)                          
+                                                                              
+                               For two-way measurements f_t  is the           
+                               uplink frequency of the ground transmitter;    
+                               the  f_t  photon will reach the receiver       
+                               one RTLT later.                                
+                               For one-way measurements  f_t  is the          
+                               downlink frequency of the spacecraft           
+                               transmitter; the  f_t  photon will reach       
+                               the receiver OWLT later.  In both cases,       
+                               f_0  and  df may change; but  f_t  is          
+                               always continuous, and changes in the          
+                               coefficients occur only on integer seconds.    
+                                                                              
+                               The format is  YYYY-MM-DDThh:mm:ss.fff         
+                                                                              
+                               If the transmit time is not known or is        
+                               irrelevant, the value                          
+                               0000-00-00T00:00:00.000  may appear."          
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 7                                              
+      NAME                   = "TRANSMIT FREQUENCY - CONSTANT TERM"           
+      START_BYTE             = 109                                            
+      BYTES                  = 17                                             
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "HERTZ"                                        
+      FORMAT                 = "F17.6"                                        
+      DESCRIPTION            = "The initial frequency  f_0  of the            
+                               transmit frequency ramp (at t0).               
+                                                                              
+                               If not known or irrelevant, the value          
+                               -999999999.999999 may appear.                  
+                                                                              
+                               See DESCRIPTION in column 6."                  
+      INVALID_CONSTANT       = -999999999.999999                              
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 8                                              
+      NAME                   = "TRANSMIT FREQUENCY - LINEAR TERM"             
+      START_BYTE             = 128                                            
+      BYTES                  = 13                                             
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "HERTZ PER SECOND"                             
+      FORMAT                 = "F13.6"                                        
+                                                                              
+      DESCRIPTION            = "The time derivative (df) of the               
+                               transmitted frequency during the               
+                               interval beginning at  t0.                     
+                                                                              
+                               If not known or irrelevant, the value          
+                               -99999.999999 may appear.                      
+                                                                              
+                               For IFMS measurements the value is             
+                               always zero.                                   
+                                                                              
+                               See DESCRIPTION in column 6."                  
+      INVALID_CONSTANT       = -99999.999999                                  
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 9                                              
+      NAME                   = "OBSERVED X-BAND ANTENNA FREQUENCY"            
+      START_BYTE             = 143                                            
+      BYTES                  = 17                                             
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "HERTZ"                                        
+      FORMAT                 = "F17.6"                                        
+      DESCRIPTION            = "Frequency of the signal at the terminals      
+                               of the receiving antenna structure at UTC      
+                               TIME (t_r).                                    
+                               Set to -999999999.999999 for missing or        
+                               corrupted data."                               
+      INVALID_CONSTANT       = -999999999.999999                              
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 10                                             
+      NAME                   = "PREDICTED X-BAND ANTENNA FREQUENCY"           
+      START_BYTE             = 162                                            
+      BYTES                  = 17                                             
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "HERTZ"                                        
+      FORMAT                 = "F17.6"                                        
+      DESCRIPTION            = "Based on the ESOC reconstructed orbit file    
+                               or SPICE kernels. Expected frequency of the    
+                               signal at the terminals of the receiving       
+                               antenna structure at UTC TIME in               
+                               columns 2 to 4 (tr). The calculation           
+                               includes geometrical effects (relative         
+                               positions and motions of ground station and    
+                               spacecraft, including Earth rotation and       
+                               light time adjustments) and a model-based      
+                               correction for one- or two-way (as             
+                               appropriate) propagation through the           
+                               Earths neutral atmosphere.                     
+                                                                              
+                               Gravity observations: the calculation includes 
+                               in addition a correction for one- or two-way   
+                               (as appropriate) propagation through the       
+                               Earths ionosphere"                             
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 11                                             
+      NAME                   = "CORRECTION OF EARTH ATMOSPHERE                
+                               PROPAGATION"                                   
+      START_BYTE             = 181                                            
+      BYTES                  = 9                                              
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "HERTZ"                                        
+      FORMAT                 = "F9.6"                                         
+      DESCRIPTION            = "Correction term for the propagation of        
+                               the signal in the Earth atmosphere, based      
+                               on meteorological data observed at the         
+                               ground station site (MET-files)"               
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 12                                             
+      NAME                   = "RESIDUAL CALIBRATED X-BAND FREQUENCY SHIFT"   
+      START_BYTE             = 192                                            
+      BYTES                  = 15                                             
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "HERTZ"                                        
+      FORMAT                 = "F15.6"                                        
+      DESCRIPTION            = "Value in column 9 minus value                 
+                               in column 10."                                 
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 13                                             
+      NAME                   = "SIGNAL LEVEL"                                 
+      START_BYTE             = 209                                            
+      BYTES                  = 6                                              
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "DECIBEL RELATIVE TO ONE MILLIWATT"            
+      FORMAT                 = "F6.1"                                         
+      DESCRIPTION            = "Signal level from AGC in decibels relative    
+                               to one milliwatt (dBm). For open-loop this     
+                               value is set to -999.9.                        
+                                                                              
+                               For closed-loop the value is set to -999.9     
+                               if it is not available."                       
+      INVALID_CONSTANT       = -999.9                                         
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 14                                             
+      NAME                   = "DIFFERENTIAL DOPPLER"                         
+      START_BYTE             = 217                                            
+      BYTES                  = 17                                             
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "HERTZ"                                        
+      FORMAT                 = "F17.6"                                        
+      DESCRIPTION            = "F_s - (3/11)*F_x  where  F_s  and  F_x        
+                               are the received signal frequencies at         
+                               S- and X-bands, respectively.                  
+                                                                              
+                               Set to -999.999999 if either value is          
+                               not available."                                
+      INVALID_CONSTANT       = -999.999999                                    
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 15                                             
+      NAME                   = "SIGMA OBSERVED ANTENNA FREQUENCY IN X-BAND"   
+      START_BYTE             = 236                                            
+      BYTES                  = 13                                             
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "HERTZ"                                        
+      FORMAT                 = "F13.6"                                        
+      DESCRIPTION            = "A statistical measure of the error in         
+                               determining OBSERVED ANTENNA FREQUENCY         
+                               (column 9) based on fit of a data spectrum     
+                               to a sinc function. Only available for         
+                               open-loop, if closed-loop this column is       
+                               set -99999.999999"                             
+      INVALID_CONSTANT       = -99999.999999                                  
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 16                                             
+      NAME                   = "SIGNAL QUALITY X-BAND"                        
+      START_BYTE             = 251                                            
+      BYTES                  = 6                                              
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "DECIBEL"                                      
+      FORMAT                 = "F6.1"                                         
+      DESCRIPTION            = "Only available for open-loop,                 
+                               if closed-loop this column is set -999.9"      
+      INVALID_CONSTANT       = -999.9                                         
+    END_OBJECT            = COLUMN                                            
+                                                                              
+    OBJECT                = COLUMN                                            
+      COLUMN_NUMBER          = 17                                             
+      NAME                   = "SIGMA SIGNAL LEVEL X-BAND"                    
+      START_BYTE             = 259                                            
+      BYTES                  = 6                                              
+      DATA_TYPE              = ASCII_REAL                                     
+      UNIT                   = "DECIBEL"                                      
+      FORMAT                 = "F6.1"                                         
+      DESCRIPTION            = "Only available for open-loop,                 
+                               if closed-loop this column is set -999.9"      
+      INVALID_CONSTANT       = -999.9                                         
+    END_OBJECT            = COLUMN                                            
+   END_OBJECT               =  DOPPLER_TABLE                                  
+                                                                              
+END_OBJECT               =  FILE                                              
+                                                                              
+END       
