@@ -2,6 +2,8 @@ package com.dsalab.masreal;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
 import android.hardware.Sensor;
@@ -30,7 +32,8 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public float frametime = 0.06f;
     public float xPosicion, xAcceleracion,xVelocity = 0.0f;
     public float yPosicion, yAcceleration,yVelocity = 0.0f;
-    public float xmax,ymax;
+    public float zPosicion, zAcceleration, zVelocity = 0.0f;
+    public float xmax,ymax,zmax;
 
 
     private Planet mPlanet;
@@ -56,17 +59,20 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public final static int SS_SUNLIGHT= GL10.GL_LIGHT0;
     public final static int SS_FILLLIGHT1= GL10.GL_LIGHT1;
     public final static int SS_FILLLIGHT2= GL10.GL_LIGHT2;
-    private float sunangle;
+    private int[] textures = new int[1];
+    Context ac;
+
 
 
     public SolarSystemRenderer(Activity c,boolean useTranslucentBackground)
     {
         super(c);
+        ac=c.getApplicationContext();
 
         //Calculate Boundry
         Display display = c.getWindowManager().getDefaultDisplay();
-        xmax = (float)display.getWidth();
-        ymax = (float)display.getHeight();
+        ymax = (float)display.getWidth()-20;
+        xmax = (float)display.getHeight()-20;
 
         this.setEGLConfigChooser(5, 6, 5, 8, 16, 0);
         super.setEGLConfigChooser(8 , 8, 8, 8, 16, 0);
@@ -79,11 +85,12 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         m_Eyeposition[Y_VALUE] = 0.0f;
         m_Eyeposition[Z_VALUE] = 5.0f;
 
+
         m_Mercury= new Planet(50, 50, .03f, 1.0f);  //2
-        m_Mercury.setPosition(0.0f, 0.0f, -0.5f);  //3
+        m_Mercury.setPosition(0.0f, 0.0f, -0.6f);  //3
 
         m_Venus = new Planet(50, 50, .06f, 1.0f);
-        m_Venus.setPosition(0.0f, 0.0f, -0.7f);
+        m_Venus.setPosition(0.0f, 0.0f, -0.75f);
 
         m_Earth= new Planet(50, 50, .06f, 1.0f);  //2
         m_Earth.setPosition(0.0f, 0.0f, -0.9f);  //3
@@ -123,11 +130,32 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         gl.glEnable(GL10.GL_DEPTH_TEST);
         gl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);
 
+        // bind the previously generated texture
+        gl.glBindTexture(GL10.GL_TEXTURE_2D, textures[0]);
+
         //bindCameraTexture(gl);
         gl.glLoadIdentity();
-        GLU.gluLookAt(gl, 0, 0, 4.2f, 0, 0, 0, 0, 1, 0);
-        //gl.glRotatef(sunangle,0.0f, 1.0f, 0.0f); //Rotate the camera image
-        //gl.glRotatef(onDrawFrameCounter,1,0,0); //Rotate the camera image
+        Log.e("MENSAJE", xPosicion + " " + yPosicion);
+
+        gl.glRotatef((float)Math.sin(onDrawFrameCounter/50f)*2f,0,-1,0);
+
+        GLU.gluLookAt(gl, 0, 0, 0.42f, 0, 0, 0, 0, 1, 0);
+
+        //CAMARA
+
+        // move camera a distance r away from the center
+        gl.glTranslatef(0, 0, -zPosicion);
+
+// rotate
+        gl.glRotatef((float) Math.sin(yPosicion), 0, 1, 0);
+        gl.glRotatef((float) Math.cos(xPosicion), 1, 0, 0);
+
+// move to center of circle
+        gl.glTranslatef(0.0f, 0.0f, zPosicion);
+        //FIN CAMARA
+
+
+
         gl.glRotatef((float)Math.sin(onDrawFrameCounter/50f)*2f,0,1,0); //Rotate the camera image
         //  gl.glRotatef((float)Math.cos(onDrawFrameCounter/40.0f)*40,0,0,1); //Rotate the camera ima
 
@@ -377,11 +405,12 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
 
-        if(sensorEvent.sensor.getType()==Sensor.TYPE_ACCELEROMETER)
+        if(sensorEvent.sensor.getType()== Sensor.TYPE_ACCELEROMETER)
         {
             //mGravity = sensorEvent.values;
-            xAcceleracion = sensorEvent.values[0];
-            yAcceleration = sensorEvent.values[1];
+            yAcceleration = sensorEvent.values[0];
+            xAcceleracion = sensorEvent.values[1];
+            zAcceleration = sensorEvent.values[2];
 
             ActualizaCielo();
         }
@@ -392,15 +421,42 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
         //Calculo
         xVelocity += (xAcceleracion * frametime);
         yVelocity += (yAcceleration * frametime);
+        zVelocity += (zAcceleration * frametime);
 
         //Calc distance travelled in that time
         float xS = (xVelocity/2)*frametime;
         float yS = (yVelocity/2)*frametime;
-
+        float zS = (zVelocity/2)*frametime;
         //Add to position negative due to sensor
         //readings being opposite to what we want!
-        yPosicion -= xS;
-        xPosicion += yS;
+        yPosicion += yS-0.010;
+        xPosicion -= xS-0.010;
+        zPosicion += zS-0.010;
+
+        if (xPosicion > xmax) {
+            xPosicion = xmax;
+            xVelocity = 0.0f;
+        } else if (xPosicion < 0) {
+            xPosicion = 0;
+            xVelocity=0.0f;
+        }
+        if (yPosicion > ymax) {
+            yPosicion = ymax;
+            yVelocity = 0.0f;
+        } else if (yPosicion < 0) {
+            yPosicion = 0;
+            yVelocity=0.0f;
+        }
+
+        if (zPosicion > 20) {
+            zPosicion = 20;
+            zVelocity=0.0f;
+        }
+
+        if (zPosicion < 0) {
+            zPosicion = 0;
+            zVelocity=0.0f;
+        }
 
     }
 
@@ -408,4 +464,5 @@ public class SolarSystemRenderer extends GLSurfaceView implements GLSurfaceView.
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
     }
+
 }
